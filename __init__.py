@@ -1,5 +1,7 @@
 from .conditioning_loader import LTXVLoadConditioning
 from .conditioning_saver import LTXVSaveConditioning
+from .conditioning_loader_ltx23 import LTXV23LoadConditioning
+from .conditioning_saver_ltx23 import LTXV23SaveConditioning
 from .decoder_noise import DecoderNoise
 from .dynamic_conditioning import DynamicConditioning
 from .easy_samplers import (
@@ -117,6 +119,8 @@ NODE_CLASS_MAPPINGS = {
     "LTXVInpaintPreprocess": LTXVInpaintPreprocess,
     "LTXVLaplacianPyramidBlend": LTXVLaplacianPyramidBlend,
     "LTXVHDRDecodePostprocess": LTXVHDRDecodePostprocess,
+    "LTXV23LoadConditioning" : LTXV23LoadConditioning,
+    "LTXV23SaveConditioning" : LTXV23SaveConditioning
 }
 
 # Consistent display names between static and dynamic node mappings in nodes_registry.py,
